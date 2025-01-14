@@ -1,0 +1,274 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;  /* Hace que las cajas no se desborden unas con otras*/
+}
+
+body {
+    font-family: 'Martian Mono', monospace;
+    /* fonnt-weight 100 delgado, 300 medio, 600 grueso*/
+}
+
+main {
+    background: #5189d8;
+}
+
+.header {
+    background: #5189d8;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+.menu {
+display: flex;
+flex-flow: column nowrap;
+height: 30px;
+align-items: center;
+border-bottom: 1px solid black;
+}
+
+.logo {
+flex: 1 1 auto;
+margin-right: 1030px;
+margin-top: -60px;
+}
+
+.logo img {
+    height: 170px;
+}
+
+.logo:hover {
+    color: white;
+}
+
+.nav{
+    flex: 5 1 auto;
+    position: absolute;
+    margin-top: 22px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 1px;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav .team {
+    color: white;
+}
+
+.social {
+    flex: 1 1 auto;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50px;
+    margin-left: 800px;
+    margin-top: -19px;
+}
+
+.social a {
+    color: black;
+    font-size: 27px;
+    width: 1px;
+    height: auto;
+    display: flex;                     /*  este referencia a todo lo que va a venir abajo */
+    justify-items: flex-end;             /*  hace que los elementos se vallan al final */
+    align-items: center;                /*   hace que los elementos tomen todo el espacio y se centren */
+    justify-content: space-between;         /*   da un espacio entre los elementos */
+    justify-self: end; 
+    padding: 0;  
+    text-decoration: none;   
+}
+
+.social a:hover {
+    color: white;
+}
+
+.social div {
+    padding: 0;
+}
+
+.container h1 {
+    margin-left: 350px;
+}
+
+.container img {
+    margin-left: 35px;
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    filter: grayscale(30%);
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+    filter: grayscale(0%);
+}
+
+.container p strong {
+    color: white;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.navegacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Barra de navegación */
+
+.naranja h3:hover {
+    color: #ec6800;
+}
+
+.red h3:hover {
+    color: #a22624;
+}
+
+.negro h3:hover {
+    color: black;
+}
+
+.blue h3:hover {
+    color: #46F6E9;
+}
+
+.amarillo h3:hover {
+    color: yellow;
+}
+
+.morado h3:hover {
+    color: purple;
+}
+
+.verde h3:hover {
+    color: #52a26f;
+}
+
+.verde1 h3:hover {
+    color: green;
+}
+
+.rosado h3:hover {
+    color: #e57e93;
+}
+
+.blue-2 h3:hover {
+    color: #0943b5;
+}
+
+.blue-3 h3:hover {
+    color: #0943b5;
+}
+
+.morado-1 h3:hover {
+    color: #3e427e;
+}
+
+.footer {
+    background: white;
+    margin-bottom: -150px;
+}
+
+.pie {
+    width: 300px;
+    display: flex;
+}
+
+.pie img {
+    height: 130px;
+    width: auto;
+    margin-left: 1050px;
+    position: relative;
+}
+
+.pie .top {
+    margin-left: 970px;
+    position: absolute;
+    margin-top: 28px;
+    color: #ec6800;
+    font-size: 25px;
+}
+
+.pie h3 {
+    color: black;
+    position: absolute;
+    font-size: 15px;
+    margin-top: 55px;
+    margin-left: 100px;
+}
+.volleyball-container {
+    display: inline-block;
+    perspective: 1000px; /* Da un efecto tridimensional */
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+.volleyball {
+    width: 120px; /* Ajusta el tamaño según sea necesario */
+    height: 120px;
+    animation: none; /* Por defecto, sin animación */
+    transition: animation 0.5s ease-in-out; /* Suaviza la transición entre estados */
+}
+
+.volleyball:hover {
+    animation: spin 1.5s linear infinite; /* Inicia la animación de giro continuo */
+}
+
+/* Definición de la animación */
+@keyframes spin {
+    from {
+      transform: rotate(0deg); /* Comienza sin rotación */
+    }
+    to {
+      transform: rotate(360deg); /* Completa una rotación */
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    } 
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}

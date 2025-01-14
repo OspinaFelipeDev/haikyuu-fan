@@ -1,0 +1,209 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;  /* Hace que las cajas no se desborden unas con otras*/
+}
+body {
+    font-family: 'Martian Mono', monospace;
+    /* fonnt-weight 100 delgado, 300 medio, 600 grueso*/
+}
+
+.header {
+    background: #ec6800;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+.menu {
+display: flex;
+flex-flow: column nowrap;
+height: 30px;
+align-items: center;
+border-bottom: 1px solid black;
+}
+
+.logo {
+flex: 1 1 auto;
+margin-right: 1030px;
+margin-top: -60px;
+}
+
+.logo img {
+height: 170px;
+}
+
+.logo:hover {
+    color: white;
+}
+
+.nav {
+    flex: 5 1 auto;
+    position: absolute;
+    margin-top: 22px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 1px;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.social {
+    flex: 1 1 auto;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50px;
+    margin-left: 800px;
+    margin-top: -19px;
+}
+
+.social a {
+    color: black;
+    font-size: 27px;
+    width: 1px;
+    height: auto;
+    display: flex;                     /*  este referencia a todo lo que va a venir abajo */
+    justify-items: flex-end;             /*  hace que los elementos se vallan al final */
+    align-items: center;                /*   hace que los elementos tomen todo el espacio y se centren */
+    justify-content: space-between;         /*   da un espacio entre los elementos */
+    justify-self: end; 
+    padding: 0;  
+    text-decoration: none;   
+}
+
+.social a:hover {
+    color: white;
+}
+.social div {
+    padding: 0;
+}
+
+main {
+    background: #ec6800;
+}
+
+main h1 {
+    margin-left: 530px;
+    margin-bottom: 50px;
+}
+
+main h2 {
+    color: white;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 10px 0;
+    margin-bottom: 40px;     /* Ajusta el margen según sea necesario */
+}
+
+main iframe {
+    margin-left: 330px;
+}
+
+strong {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.footer {
+    background: white;
+    margin-bottom: -150px;
+}
+
+.pie {
+    width: 300px;
+    display: flex;
+}
+
+.pie a {
+    margin-top: -10px;
+}
+
+.pie img {
+    height: 130px;
+    width: auto;
+    margin-left: 1050px;
+    position: relative;
+}
+
+.pie .top {
+    margin-left: 970px;
+    position: absolute;
+    margin-top: 49px;
+    color: #ec6800;
+    font-size: 25px;
+}
+
+.pie h3 {
+    color: black;
+    position: absolute;
+    font-size: 15px;
+    margin-top: 55px;
+    margin-left: 100px;
+}
+
+.volleyball-container {
+    display: inline-block;
+    perspective: 1000px; /* Da un efecto tridimensional */
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+.volleyball {
+    width: 120px; /* Ajusta el tamaño según sea necesario */
+    height: 120px;
+    animation: none; /* Por defecto, sin animación */
+    transition: animation 0.5s ease-in-out; /* Suaviza la transición entre estados */
+}
+
+.volleyball:hover {
+    animation: spin 1.5s linear infinite; /* Inicia la animación de giro continuo */
+}
+
+/* Definición de la animación */
+@keyframes spin {
+    from {
+      transform: rotate(0deg); /* Comienza sin rotación */
+    }
+    to {
+      transform: rotate(360deg); /* Completa una rotación */
+    }
+}
+
+@media all and (max-width: 800px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+    flex-direction: column;
+    } 
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
