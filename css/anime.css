@@ -174,20 +174,6 @@ height: 170px;
 }
 
 
-@media all and (max-width: 800px) {
-    .section {
-        flex-direction: column;
-    }
-    .menu {
-        flex-direction: column;
-        height: auto;
-    }
-    .aside {
-        display: flex;
-        justify-content: center;
-    }
-}
-
 
 
 
