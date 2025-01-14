@@ -18,7 +18,6 @@ Descubre los perfiles de todos los personajes:
 
 ### 🔗 Créditos
 Agradecimientos al equipo detrás del desarrollo de este sitio:
-<img src="assets/img/otros/logo-sin-fondo-png.png" alt="Página Principal" width="300">
 ![Créditos](assets/img/otros/logo-sin-fondo-png.png)
 
 ## 🎨 Características
