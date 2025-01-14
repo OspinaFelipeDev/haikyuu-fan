@@ -188,17 +188,6 @@ height: 170px;
     }
 }
 
-@media all and (max-width: 600px) {
-    .articulos {
-    flex-direction: column;
-    } 
-}
-
-@media all and (max-width: 400px) {
-    .aside {
-        flex-direction: column;
-    }
-}
 
 
 

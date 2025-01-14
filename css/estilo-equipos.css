@@ -293,26 +293,3 @@ color: #a22624;
       transform: rotate(360deg); /* Completa una rotación */
     }
 }
-
-
-@media all and (max-width: 600px) {
-    .articulos {
-        flex-direction: column;
-    } 
-}
-
-@media all and (max-width: 400px) {
-    .aside {
-        flex-direction: column;
-    }
-}
-
-
-
-
-
-
- /*.icono {
-    color: yellow;
-    font-size: 50px;
-} 
