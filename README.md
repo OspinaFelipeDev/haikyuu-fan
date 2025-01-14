@@ -31,8 +31,8 @@ Agradecimientos al equipo detrás del desarrollo de este sitio:
 
 Este proyecto fue construido con:
 
-- **HTML**: 60.0%
-- **CSS**: 40.0%
+- **HTML**: 68.1%
+- **CSS**: 31.9%
 
 🚧 Nota Importante
 Actualmente, la página no es responsive y está diseñada únicamente para pantallas de computador. Próximamente, se desarrollará soporte para dispositivos móviles y tablets.
