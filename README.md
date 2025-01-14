@@ -8,13 +8,13 @@
 ¡Explora la página principal llena de contenido emocionante sobre Haikyuu!
 ![Página Principal](assets/img/otros/principal.png)
 
-### 🏐 Detalles de Equipos
+### 🏐 Detalles de Equipos:
 Descubre los perfiles de los equipos:
 ![Detalles de Equipos](assets/img/otros/captura-team.png)
 
 ### 🏐 Detalles de los jugadores:
 Descubre los perfiles de todos los personajes:
-![Detalles de los personajes](assets/img/otros/captura-player.png)
+![Detalles de los personajes](assets/img/otros/Captura_player.png)
 
 ### 🔗 Créditos
 Agradecimientos al equipo detrás del desarrollo de este sitio:
